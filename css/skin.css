@@ -4527,7 +4527,7 @@ figure figcaption,
     background: rgba(38, 201, 195, 0);
 }
 .ih-item.square.effect_gym .img > a:hover .sc2:before {
-    background: rgba(38, 201, 195, 0.6);
+    background: rgba(38, 201, 195, 0);
 }
 
 /* add transition animation */
