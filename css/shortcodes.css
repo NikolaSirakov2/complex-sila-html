@@ -447,7 +447,7 @@ button.sc_button_size_large,
 .sc_chat_inner {
 	position: relative;
 	background-color: #ffffff;
-	border: 1px solid #f15a23;
+	border: 1px solid #c2185b;
 	padding: 1.2em 1.2em 0.875em;
 	overflow:hidden;
 	-webkit-border-radius: 6px;
@@ -468,8 +468,8 @@ button.sc_button_size_large,
 	     -o-transform: rotate(30deg) skewY(-45deg);
 			transform: rotate(30deg) skewY(-45deg);
 	background-color:#ffffff;
-	border-left:1px solid #f15a23;
-	border-bottom:1px solid #f15a23;
+	border-left:1px solid #c2185b;
+	border-bottom:1px solid #c2185b;
 }
 .sc_chat .sc_chat_title {
 	margin-bottom: 1em;
@@ -2307,7 +2307,7 @@ ul.sc_list_style_iconed {
 .sc_title.style_4 {margin-top:0px;color:#26c9c3;font-weight:700;}
 
 
-.sc_abovetitle.style_1 {margin-top:0px;margin-bottom:3em;color:#f15a23;font-size:0.625em;}
+.sc_abovetitle.style_1 {margin-top:0px;margin-bottom:3em;color:#c2185b;font-size:0.625em;}
 .sc_abovetitle.style_2 {margin-top:0px;margin-bottom:1em;font-weight:700;font-size:1.875em}
 
 .sc_undertitle.style_1 {margin-bottom:2.5em;text-align:center;color:#c2c2c2;font-weight:400;}

@@ -176,7 +176,7 @@ padding-top:1px;
 margin:0px;
 border-width:0px;
 border-style:none;
-background-color:#de543e;
+background-color:#c2185b;
 letter-spacing:0;
 }
 
@@ -209,7 +209,7 @@ text-shadow:none;
 }
 
 .tp-caption a {
-color:#ff7302;
+color:#c2185b;
 text-shadow:none;
 -webkit-transition:all 0.2s ease-out;
 -moz-transition:all 0.2s ease-out;
@@ -218,7 +218,7 @@ text-shadow:none;
 }
 
 .tp-caption a:hover {
-color:#ffa902;
+color:#ad1457;
 }
 
 .tp-caption.thinheadline_dark {
@@ -266,7 +266,7 @@ font-weight:300;
 font-size:50px;
 line-height:70px;
 font-family:"Open Sans";
-background-color:#db4360;
+background-color:#c2185b;
 padding:0px 20px;
 -webkit-border-radius:0px;
 -moz-border-radius:0px;
@@ -457,7 +457,7 @@ font-size:24px;
 line-height:30px;
 font-weight:800;
 font-family:"Open Sans";
-color:rgb(243, 156, 18);
+color:#c2185b;
 text-decoration:none;
 background-color:transparent;
 border-width:0px;
@@ -472,7 +472,7 @@ font-weight:800;
 font-family:"Open Sans";
 color:rgb(255, 255, 255);
 text-decoration:none;
-background-color:rgb(243, 156, 18);
+background-color:#c2185b;
 padding:10px;
 border-width:0px;
 border-color:rgb(255, 214, 88);
