@@ -2635,10 +2635,8 @@ a.tribe-events-read-more:hover,
 	background: url(images/texture_center.png) center center no-repeat, url(images/texture_top.png) center top repeat-x, url(images/texture_slider.png) left top repeat;
 }
 
-.bg_image_11 {background-image: url(../images/750x422.png);}
-.bg_image_12 {background-image: url(../images/750x422.png);}
-
-.bg_image_12 {background-image:url(../images/1920x1250.png); background-position:50% 50%;}
+.bg_image_11 {background-image: url(../assets/images/slider/carousel-4.jpg);}
+.bg_image_12 {background-image: url(../assets/images/slider/carousel-5.jpg); background-position:50% 50%;}
 .bg_image_12 .texture_bg_1 {background-image:url(../images/texture_1.png);}
 
 .bg_image_13 {
