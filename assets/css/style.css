@@ -179,7 +179,8 @@ textarea:focus {
 .gm_header_wrapper{
     float: left;
     width: 100%;
-    background-color: #ffffff;
+    background: linear-gradient(135deg, #E6007A 0%, #C4006B 100%);
+    background-color: #E6007A;
 }
 .gm_logo{
     float: left;
@@ -209,7 +210,7 @@ textarea:focus {
 .gm_menu ul li a {
     display: block;
     text-transform: capitalize;
-    color: #222222;
+    color: #ffffff;
     font-weight: 500;
     padding: 25px 0px;
     -webkit-transition: all 0.3s;
