@@ -13,7 +13,55 @@
 	<link rel='stylesheet' href='css/core.animation.css' type='text/css' media='all'/>
 	<link rel='stylesheet' href='css/style.css' type='text/css' media='all'/>
 	<link rel='stylesheet' href='css/skin.css' type='text/css' media='all'/>
-	<style id='themerex-custom-style-inline-css' type='text/css'></style>
+	<style id='themerex-custom-style-inline-css' type='text/css'>
+		/* Ensure consistent sizing for coach images */
+		.team_section .sc_team_item_avatar img {
+			width: 350px !important;
+			height: 400px !important;
+			object-fit: contain !important;
+			object-position: bottom center !important;
+			display: block !important;
+		}
+		
+		/* Force consistent alignment for all team items */
+		.team_section .sc_team_item {
+			display: flex !important;
+			flex-direction: column !important;
+			align-items: center !important;
+			min-height: 450px !important;
+		}
+		
+		.team_section .sc_team_item_avatar {
+			display: block !important;
+			height: 400px !important;
+			position: relative !important;
+			overflow: hidden !important;
+		}
+		
+		/* Ensure all columns have same height */
+		.team_section .column-1_4 {
+			display: flex !important;
+			flex-direction: column !important;
+			align-items: center !important;
+		}
+		
+		/* Center the three remaining coaches */
+		.team_section .sc_columns {
+			justify-content: center !important;
+			display: flex !important;
+		}
+		
+		.team_section .column-1_4 {
+			flex: 0 0 auto !important;
+			width: auto !important;
+			margin: 0 15px !important;
+		}
+		
+		/* Adjust text position for Veselin (middle trainer) */
+		.team_section .sc_team_item_2 .sc_team_item_info {
+			padding-left: 10px !important;
+		}
+	</style>
 	<link rel='stylesheet' href='css/responsive.css' type='text/css' media='all'/>
 
 	<!--<link rel='stylesheet' href='custom_tools/css/front.customizer.css' type='text/css' media='all'/>-->
@@ -955,145 +1003,111 @@
 										<div class="sc_content content_wrap">
 											<div class="sc_section bg_tint_none aligncenter">
 												<h2 class="sc_title style_1">OUR TRAINERS &amp; INSTRUCTORS</h2>
-												<h5 class="sc_undertitle style_3">Choose your style</h5>
 												<div class="sc_team sc_team_style_4">
 													<div class="sc_columns columns_wrap">
-														<div class="column-1_4">
-															<div class="sc_team_item sc_team_item_1 odd first">
-																<div class="sc_team_item_avatar">
-																	<img alt="team-1-style4.png" src="images/270x470.png">
-																	<div class="sc_team_item_hover">
-																		<div class="sc_team_item_socials">
-																			<div class="sc_socials sc_socials_size_small">
-																				<div class="sc_socials_item">
-																					<a href="#" target="_blank" class="social_icons social_facebook icons">
-																						<span class="icon-facebook"></span>
-																					</a>
-																				</div>
-																				<div class="sc_socials_item">
-																					<a href="#" target="_blank" class="social_icons social_twitter icons">
-																						<span class="icon-twitter"></span>
-																					</a>
-																				</div>
-																				<div class="sc_socials_item">
-																					<a href="#" target="_blank" class="social_icons social_gplus icons">
-																						<span class="icon-gplus"></span>
-																					</a>
-																				</div>
-																			</div>
-																		</div>
-																	</div>
-																</div>
-																<div class="sc_team_item_info">
-																	<h6 class="sc_team_item_title">
-																	<a href="#">Jim Brown</a>
-																	</h6>
-																	<div class="sc_team_item_position">Weight</div>
-																</div>
-															</div>
-														</div>
-														<div class="column-1_4">
-															<div class="sc_team_item sc_team_item_2 even">
-																<div class="sc_team_item_avatar">
-																	<img alt="team-2-style4.png" src="images/270x470.png">
-																	<div class="sc_team_item_hover">
-																		<div class="sc_team_item_socials">
-																			<div class="sc_socials sc_socials_size_small">
-																				<div class="sc_socials_item">
-																					<a href="#" target="_blank" class="social_icons social_facebook icons">
-																						<span class="icon-facebook"></span>
-																					</a>
-																				</div>
-																				<div class="sc_socials_item">
-																					<a href="#" target="_blank" class="social_icons social_twitter icons">
-																						<span class="icon-twitter"></span>
-																					</a>
-																				</div>
-																				<div class="sc_socials_item">
-																					<a href="#" target="_blank" class="social_icons social_gplus icons">
-																						<span class="icon-gplus"></span>
-																					</a>
+																<div class="column-1_4">
+																<div class="sc_team_item sc_team_item_1 odd first">
+																	<div class="sc_team_item_avatar">
+																		<img alt="coach-2" src="assets/images/coaches/coach-2-removebg-preview.png">
+																		<div class="sc_team_item_hover">
+																			<div class="sc_team_item_socials">
+																				<div class="sc_socials sc_socials_size_small">
+																					<div class="sc_socials_item">
+																						<a href="#" target="_blank" class="social_icons social_facebook icons">
+																							<span class="icon-facebook"></span>
+																						</a>
+																					</div>
+																					<div class="sc_socials_item">
+																						<a href="#" target="_blank" class="social_icons social_twitter icons">
+																							<span class="icon-twitter"></span>
+																						</a>
+																					</div>
+																					<div class="sc_socials_item">
+																						<a href="#" target="_blank" class="social_icons social_gplus icons">
+																							<span class="icon-gplus"></span>
+																						</a>
+																					</div>
 																				</div>
 																			</div>
 																		</div>
 																	</div>
-																</div>
-																<div class="sc_team_item_info">
-																	<h6 class="sc_team_item_title">
-																		<a href="#">Maria Smith</a>
-																	</h6>
-																	<div class="sc_team_item_position">Yoga</div>
+																	<div class="sc_team_item_info">
+																		<h6 class="sc_team_item_title">
+																		<a href="#">Kolyo Neshev</a>
+																		</h6>
+																		<div class="sc_team_item_position">Fitness</div>
+																	</div>
 																</div>
 															</div>
-														</div>
-														<div class="column-1_4">
-															<div class="sc_team_item sc_team_item_3 odd">
-																<div class="sc_team_item_avatar">
-																	<img alt="team-3-style4.png" src="images/270x470.png">
-																	<div class="sc_team_item_hover">
-																		<div class="sc_team_item_socials">
-																			<div class="sc_socials sc_socials_size_small">
-																				<div class="sc_socials_item">
-																					<a href="#" target="_blank" class="social_icons social_facebook icons">
-																						<span class="icon-facebook"></span>
-																					</a>
-																				</div>
-																				<div class="sc_socials_item">
-																					<a href="#" target="_blank" class="social_icons social_twitter icons">
-																						<span class="icon-twitter"></span>
-																					</a>
-																				</div>
-																				<div class="sc_socials_item">
-																					<a href="#" target="_blank" class="social_icons social_gplus icons">
-																						<span class="icon-gplus"></span>
-																					</a>
+																<div class="column-1_4">
+																<div class="sc_team_item sc_team_item_2 even">
+																	<div class="sc_team_item_avatar">
+																		<img alt="coach-3" src="assets/images/coaches/coach-3-removebg-preview.png">
+																		<div class="sc_team_item_hover">
+																			<div class="sc_team_item_socials">
+																				<div class="sc_socials sc_socials_size_small">
+																					<div class="sc_socials_item">
+																						<a href="#" target="_blank" class="social_icons social_facebook icons">
+																							<span class="icon-facebook"></span>
+																						</a>
+																					</div>
+																					<div class="sc_socials_item">
+																						<a href="#" target="_blank" class="social_icons social_twitter icons">
+																							<span class="icon-twitter"></span>
+																						</a>
+																					</div>
+																					<div class="sc_socials_item">
+																						<a href="#" target="_blank" class="social_icons social_gplus icons">
+																							<span class="icon-gplus"></span>
+																						</a>
+																					</div>
 																				</div>
 																			</div>
 																		</div>
 																	</div>
-																</div>
-																<div class="sc_team_item_info">
-																	<h6 class="sc_team_item_title">
-																	<a href="#">John Anderson</a>
-																	</h6>
-																	<div class="sc_team_item_position">GYM</div>
+																	<div class="sc_team_item_info" style="padding-left: 40px !important;">
+																		<h6 class="sc_team_item_title">
+																		<a href="#">Veselin Yankov</a>
+																		</h6>
+																		<div class="sc_team_item_position">Fitness</div>
+																	</div>
 																</div>
 															</div>
-														</div>
-														<div class="column-1_4">
-															<div class="sc_team_item sc_team_item_4 even">
-																<div class="sc_team_item_avatar">
-																	<img alt="team-4-style4.png" src="images/270x470.png">
-																	<div class="sc_team_item_hover">
-																		<div class="sc_team_item_socials">
-																			<div class="sc_socials sc_socials_size_small">
-																				<div class="sc_socials_item">
-																					<a href="#" target="_blank" class="social_icons social_facebook icons">
-																						<span class="icon-facebook"></span>
-																					</a>
-																				</div>
-																				<div class="sc_socials_item">
-																					<a href="#" target="_blank" class="social_icons social_twitter icons">
-																						<span class="icon-twitter"></span>
-																					</a>
-																				</div>
-																				<div class="sc_socials_item">
-																					<a href="#" target="_blank" class="social_icons social_gplus icons">
-																						<span class="icon-gplus"></span>
-																					</a>
+																<div class="column-1_4">
+																<div class="sc_team_item sc_team_item_3 odd">
+																	<div class="sc_team_item_avatar">
+																		<img alt="coach-1" src="assets/images/coaches/coach-1-removebg-preview.png">
+																		<div class="sc_team_item_hover">
+																			<div class="sc_team_item_socials">
+																				<div class="sc_socials sc_socials_size_small">
+																					<div class="sc_socials_item">
+																						<a href="#" target="_blank" class="social_icons social_facebook icons">
+																							<span class="icon-facebook"></span>
+																						</a>
+																					</div>
+																					<div class="sc_socials_item">
+																						<a href="#" target="_blank" class="social_icons social_twitter icons">
+																							<span class="icon-twitter"></span>
+																						</a>
+																					</div>
+																					<div class="sc_socials_item">
+																						<a href="#" target="_blank" class="social_icons social_gplus icons">
+																							<span class="icon-gplus"></span>
+																						</a>
+																					</div>
 																				</div>
 																			</div>
 																		</div>
 																	</div>
-																</div>
-																<div class="sc_team_item_info">
-																	<h6 class="sc_team_item_title">
-																		<a href="#">Anna Lee</a>
-																	</h6>
-																	<div class="sc_team_item_position">Fitness</div>
+																	<div class="sc_team_item_info">
+																		<h6 class="sc_team_item_title">
+																		<a href="#">Angel Angelov</a>
+																		</h6>
+																		<div class="sc_team_item_position">Fitness</div>
+																	</div>
 																</div>
 															</div>
-														</div>
+														
 													</div>
 												</div>
 											</div>
